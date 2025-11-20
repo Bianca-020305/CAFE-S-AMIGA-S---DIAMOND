@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CAFE AMIGA'S</title>
+  <link rel="stylesheet" href="amigas.css" />
+  <link rel="icon" type="image/png" href="images/logo2.png" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-left">
+      <img src="images/logo2.png" alt="Cafe Amiga's Logo" class="logo">
+      <div class="brand">
+        <h1>Café Amiga’s</h1>
+        <small>Freshly Coffee · Fast Delivery</small>
+      </div>
+    </div>
+
+    <nav class="header-right">
+      <button class="tab-button active" data-tab="home">Home</button>
+      <button class="tab-button" data-tab="products">Products</button>
+      <button class="tab-button" data-tab="customize">Customize</button>
+      <div class="cart-wrap">
+        <button class="tab-button" data-tab="cart" id="cart-btn">
+          Cart
+          <span id="cart-bubble" class="cart-bubble hidden">0</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- FULL-WIDTH HERO (stay on home only) -->
+  <div class="hero-banner" id="hero-banner">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <h1>Welcome to Café Amiga’s</h1>
+        <p>Where every sip feels like friendship</p>
+        <button id="start-order" class="hero-btn">Order Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT-->
+  <main class="container">
+    <!-- HOME (contains the product summary) -->
+    <section id="home" class="tab-content active">
+      <div id="home-products" class="home-products-section">
+        <h2 class="home-products-title">Our Coffee Selection</h2>
+        <div id="home-products-scroll" class="home-products-scroll">
+          <!-- filled dynamically by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS (grid) -->
+    <section id="products" class="tab-content">
+      <div class="toolbar">
+        <input id="search" placeholder="Search menu..." />
+      </div>
+      <div id="menu-grid" class="menu-grid"></div>
+    </section>
+
+    <!-- CUSTOMIZE -->
+    <section id="customize" class="tab-content">
+      <h2>Customize Drink</h2>
+      <div id="selected-info" class="card muted">Select a Menu from <strong>Products</strong> or choose a base below.</div>
+
+      <form id="custom-form" class="custom-form">
+        <label>Base
+          <select id="base-select" required>
+            <option value="">-- choose base --</option>
+          </select>
+        </label>
+        <label>Flavor
+          <select id="flavor-select" required>
+            <option value="">-- choose flavor --</option>
+            <option>Caramel</option>
+            <option>Vanilla</option>
+            <option>Hazelnut</option>
+            <option>Mocha</option>
+          </select>
+        </label>
+
+        <label>Size
+          <select id="size-select" required>
+            <option value="Small">Small (+₱0)</option>
+            <option value="Medium">Medium (+₱20)</option>
+            <option value="Large">Large (+₱40)</option>
+          </select>
+        </label>
+
+        <fieldset class="extras">
+          <legend>Add-ons (pick any)</legend>
+          <label><input type="checkbox" value="Cream Crest" /> Cream Crest (+₱20)</label>
+          <label><input type="checkbox" value="Pearl Pop" /> Pearl Pop (+₱25)</label>
+          <label><input type="checkbox" value="Extra Shot" /> Extra Shot (+₱30)</label>
+          <label><input type="checkbox" value="Cinnamon" /> Cinnamon (+₱5)</label>
+        </fieldset>
+
+        <label>Custom name (optional)
+          <input id="custom-name" placeholder="e.g., Golden Drizzle - my style" />
+        </label>
+
+        <div class="form-actions">
+          <button type="submit" class="primary">Add to Cart</button>
+          <button type="button" id="cancel-custom" class="outline">Cancel</button>
+        </div>
+      </form>
+
+      <div id="custom-preview" class="card preview"></div>
+    </section>
+
+    <!-- CART -->
+    <section id="cart" class="tab-content">
+      <h2>Your Cart</h2>
+
+      <div class="cart-actions">
+        <button id="edit-selected" class="cart-action">Edit Selected</button>
+        <button id="remove-selected" class="cart-action danger">Remove Selected</button>
+        <button id="select-all" class="cart-action">Select All</button>
+      </div>
+
+      <div id="cart-list" class="cart-list"></div>
+
+      <div id="cart-summary" class="card summary">
+        <div>Total: ₱<span id="cart-total">0</span></div>
+      </div>
+
+      <hr />
+      <!-- CHECK OUT-->
+      <h3>Checkout</h3>
+      <form id="checkout-form" class="checkout-form">
+        <input id="cust-name" placeholder="Full name" required />
+        <input id="cust-phone" placeholder="Phone number" required />
+        <input id="cust-address" placeholder="Delivery address" required />
+        <select id="cust-payment" required>
+          <option value="">Select payment</option>
+          <option value="COD">Cash on Delivery</option>
+          <option value="GCash">GCash / Maya</option>
+          <option value="Bank">Bank Transfer</option>
+        </select>
+        <div class="form-actions">
+          <button type="submit" class="primary place-order">Place Order</button>
+        </div>
+      </form>
+
+      <div id="order-result" class="card preview"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© 2025 Café Amiga’s</small>
+  </footer>
+
+  <!-- POPUP / MODAL -->
+  <div id="menu-modal" class="modal hidden" aria-hidden="true">
+    <div class="modal-content">
+      <button id="close-modal" class="close-btn">×</button>
+      <img id="modal-img" src="" alt="Coffee Image">
+      <h3 id="modal-name"></h3>
+      <p id="modal-desc"></p>
+      <p class="price">₱<span id="modal-price"></span></p>
+      <div class="modal-actions">
+        <button id="modal-add" class="primary modal-add">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="amigas.js"></script>
+</body>
+</html>
