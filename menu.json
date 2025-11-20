@@ -1,0 +1,183 @@
+[
+  {
+    "id": "c1",
+    "name": "Caramel Macchiato",
+    "quote": "Golden drizzle in every sip.",
+    "description": "A smooth espresso layered with steamed milk and caramel drizzle.",
+    "price": 145,
+    "rating": 4.9,
+    "image": "images/c1.jpg"
+   
+  },
+  {
+    "id": "c2",
+    "name": "Hazelnut Latte",
+    "quote": "Nutty warmth in every cup.",
+    "description": "Creamy espresso with hazelnut syrup and frothy milk.",
+    "price": 155,
+    "rating": 4.8,
+    "image": "images/c2.jpg"
+  },
+  {
+    "id": "c3",
+    "name": "Americano",
+    "quote": "Bold simplicity, perfect balance.",
+    "description": "Fresh espresso blended with hot water for a smooth finish.",
+    "price": 120,
+    "rating": 4.7,
+    "image": "images/c3.jpg"
+  },
+  {
+    "id": "c4",
+    "name": "Cappuccino",
+    "quote": "A cloud of milk atop your morning.",
+    "description": "Espresso topped with steamed milk foam and a sprinkle of cocoa.",
+    "price": 130,
+    "rating": 4.9,
+    "image": "images/c4.jpg"
+  },
+  {
+    "id": "c5",
+    "name": "Mocha Latte",
+    "quote": "Chocolate meets espresso magic.",
+    "description": "Espresso mixed with chocolate syrup, steamed milk, and whipped cream.",
+    "price": 150,
+    "rating": 4.8,
+    "image": "images/c5.jpg"
+  },
+  {
+    "id": "c6",
+    "name": "Vanilla Latte",
+    "quote": "Sweet comfort in every pour.",
+    "description": "Smooth espresso with vanilla syrup and steamed milk.",
+    "price": 145,
+    "rating": 4.7,
+    "image": "images/c6.jpg"
+  },
+  {
+    "id": "c7",
+    "name": "Iced Caramel Latte",
+    "quote": "Cool, sweet, and bold.",
+    "description": "Iced espresso with milk and caramel syrup.",
+    "price": 160,
+    "rating": 4.8,
+    "image": "images/c7.jpg"
+  },
+  {
+    "id": "c8",
+    "name": "Spanish Latte",
+    "quote": "Sweetened milk, bold espresso.",
+    "description": "Espresso and condensed milk for that creamy, rich texture.",
+    "price": 150,
+    "rating": 4.9,
+    "image": "images/c8.jpg"
+  },
+  {
+    "id": "c9",
+    "name": "Cold Brew",
+    "quote": "Smooth, chilled perfection.",
+    "description": "Slow-brewed coffee served cold with a rich, natural flavor.",
+    "price": 165,
+    "rating": 4.6,
+    "image": "images/c9.jpg"
+  },
+  {
+    "id": "c10",
+    "name": "Flat White",
+    "quote": "Silky and smooth espresso harmony.",
+    "description": "Velvety milk with a strong espresso base.",
+    "price": 150,
+    "rating": 4.9,
+    "image": "images/c10.jpg"
+  },
+  {
+    "id": "c11",
+    "name": "Matcha Latte",
+    "quote": "Green calm in a cup.",
+    "description": "Finely ground matcha whisked with milk for a soothing drink.",
+    "price": 160,
+    "rating": 4.8,
+    "image": "images/c11.jpg"
+  },
+  {
+    "id": "c12",
+    "name": "Choco Frappe",
+    "quote": "Frosty cocoa bliss.",
+    "description": "Blended iced chocolate coffee topped with whipped cream.",
+    "price": 175,
+    "rating": 4.7,
+    "image": "images/c12.jpg"
+  },
+  {
+    "id": "c13",
+    "name": "Caramel Frappe",
+    "quote": "Sweet frozen caramel delight.",
+    "description": "Iced blended caramel coffee with cream topping.",
+    "price": 175,
+    "rating": 4.9,
+    "image": "images/c13.jpg"
+  },
+  {
+    "id": "c14",
+    "name": "White Mocha",
+    "quote": "Soft and creamy indulgence.",
+    "description": "Espresso, white chocolate syrup, and steamed milk in harmony.",
+    "price": 170,
+    "rating": 4.8,
+    "image": "images/c14.jpg"
+  },
+  {
+    "id": "c15",
+    "name": "Honey Latte",
+    "quote": "Natural sweetness, rich taste.",
+    "description": "Espresso with warm milk and honey drizzle.",
+    "price": 160,
+    "rating": 4.8,
+    "image": "images/c15.jpg"
+  },
+  {
+    "id": "c16",
+    "name": "Cinnamon Mocha",
+    "quote": "A hint of spice and everything nice.",
+    "description": "Chocolate mocha with cinnamon twist.",
+    "price": 155,
+    "rating": 4.7,
+    "image": "images/c16.jpg"
+  },
+  {
+    "id": "c17",
+    "name": "Affogato",
+    "quote": "Espresso over ice cream heaven.",
+    "description": "A scoop of vanilla ice cream drowned in hot espresso.",
+    "price": 190,
+    "rating": 4.9,
+    "image": "images/c17.jpg"
+  },
+  {
+    "id": "c18",
+    "name": "Classic Brew",
+    "quote": "Timeless aroma, perfect start.",
+    "description": "Freshly brewed traditional coffee, full-bodied flavor.",
+    "price": 115,
+    "rating": 4.6,
+    "image": "images/c18.jpg"
+  },
+  {
+    "id": "c19",
+    "name": "Sweet Cream Cold Brew",
+    "quote": "Silky smooth and refreshing.",
+    "description": "Cold brew topped with sweet vanilla cream.",
+    "price": 175,
+    "rating": 4.8,
+    "image": "images/c19.jpg"
+  },
+  {
+    "id": "c20",
+    "name": "Toffee Nut Latte",
+    "quote": "Sweet, nutty, and comforting.",
+    "description": "Espresso with steamed milk and toffee nut flavor.",
+    "price": 165,
+    "rating": 4.9,
+    "image": "images/c20.jpg"
+  }
+]
